@@ -15,6 +15,11 @@ return new class extends Migration
             $table->id();
 
             //crear campos
+            //solo acepta numeros posistivos y numeros enteros
+            $table->unsignedBigInteger('user_id');
+            //crear la relación entre esta tabla y la tabla users
+            $table->foreign('user_id')->references('id')->on('users');
+
             $table->string('title');
             $table->string('slug')->unique();
             $table->text('body');
