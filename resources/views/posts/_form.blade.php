@@ -1,10 +1,10 @@
 @csrf
 
 <label class="uppercaase text-white-700 text-xs">Título</label>
-<input type="text" name="title" class="rounded border-black-200 w-full mb-4" value="{{ $posts->title }}">
+<input type="text" name="title" class="rounded border-black-200 w-full mb-4" style= " background-color:#111827" value="{{ $posts->title }}">
 
-<label class="uppercaase text-white-700 text-xs">Contenido</label>
-<textarea name="body" rows="5" class="rounded border-black-200 w-full mb-4">{{ $posts->body }}</textarea>
+<label class="uppercaase text-white-700 text-xs" >Contenido</label>
+<textarea name="body" rows="5" class="rounded border-black-200 w-full mb-4" style= " background-color:#111827">{{ $posts->body }}</textarea>
 
 <div class="flex justify-between items-center">
     <a href="{{ route('posts.index') }}" class="text-indigo-600">Volver</a>
