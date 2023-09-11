@@ -6,6 +6,12 @@
 <input type="text" name="title" class="rounded border-black-200 w-full mb-4" style= " background-color:#111827" value="{{ old('title', $posts->title) }}">
 
 
+<label class="uppercaase text-white-700 text-xs">Slug</label>
+<span class="text-xs text-red-600">@error('slug') {{ $message }} @enderror</span>
+
+<input type="text" name="slug" class="rounded border-black-200 w-full mb-4" style= " background-color:#111827" value="{{ old('slug', $posts->slug) }}">
+
+
 <label class="uppercaase text-white-700 text-xs" >Contenido</label>
 <span class="text-xs text-red-600">@error('body') {{ $message}} @enderror</span>
 
